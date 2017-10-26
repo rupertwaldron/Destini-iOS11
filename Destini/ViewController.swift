@@ -30,8 +30,8 @@ class ViewController: UIViewController {
     
     
     // UI Elements linked to the storyboard
-    @IBOutlet weak var topButton: UIButton!         // Has TAG = 1
-    @IBOutlet weak var bottomButton: UIButton!      // Has TAG = 2
+    @IBOutlet weak var topButton: UIButton!  // Has TAG = 1
+    @IBOutlet weak var bottomButton: UIButton! // Has TAG = 2
     @IBOutlet weak var storyTextView: UILabel!
     @IBOutlet weak var restartButton: UIButton!
     var storyIndex : Int = 1
@@ -87,7 +87,8 @@ class ViewController: UIViewController {
             storyIndex = 5
             restartButton.isHidden = false
         }
-        else if (storyIndex == 4 || storyIndex == 5 || storyIndex == 6) {
+        else if (storyIndex == 4 || storyIndex == 5
+            || storyIndex == 6) {
             restartButton.isHidden = false
         }
     }
